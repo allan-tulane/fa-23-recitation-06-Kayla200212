@@ -6,22 +6,35 @@ def fib_recursive(n, counts):
     """    
     counts[n] += 1
     ###TODO
-    pass
+    if n == 0 or n == 1:
+      return n
+    else:
+      return fib_recursive(n-1, counts)+fib_recursive(n-2,counts)
     
-
+ 
     
 def fib_top_down(n, fibs):
     ###TODO
-    pass
+    if list[n] == -1:#if list isnt done
+      if n==0 or n==1:#base 0 or 1
+        fibs[n] = n
+        return list[n]#return updated list
+      else:#otherwise recursively do it and store values
+        fibs[n] = fib_top_down(n-1, fibs) + fib_top_down(n-2, fibs)
+    else:#or just return the list
+      return list[n]
 
 
 def fib_bottom_up(n):
     ###TODO
-    pass
+    list = [0] * (n+1)#list of n+1 elements set to 0
+    list[1] = 1
+    if n<=0:
+      return [0]#cases with 0 or 1
+    if n == 1:
+      return [0,1]
+    for i in range(2,n+1):#beginning at 2 and going from n+1
+      list[i] = list[i-1] + list[i-2]#fibonacci step
 
-
-
-
-def fib_bottom_up_better(n):
-    ###TODO
-    pass
+    return list
+    

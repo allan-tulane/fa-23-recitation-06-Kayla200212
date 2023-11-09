@@ -52,7 +52,7 @@ Today we'll learn more about dynamic programming using the classic problem of co
 .  
 .  
 
-**7** Finally, we will compute a bottom-up implementation. This is a non-recursive solution that starts at $F_0$ and iteratively computes subsequent values of $F_i$ until $F_n$ is reached. To do so, store a list of $n+1$ values, initialized to 0's, which will store the Fibonacci sequence up from $F_0$ to $F_n$. Write a for loop to fill it in, then return the last value. Complete `fib_bottom_up` and test with `test_fib_bottom_up`.
+**7** Finally, we will compute a bottom-up implementation. This is a non-recursive solution that starts at $F_0$ and iterxatively computes subsequent values of $F_i$ until $F_n$ is reached. To do so, store a list of $n+1$ values, initialized to 0's, which will store the Fibonacci sequence up from $F_0$ to $F_n$. Write a for loop to fill it in, then return the last value. Complete `fib_bottom_up` and test with `test_fib_bottom_up`.
 
 .  
 .  
